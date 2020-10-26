@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body{
+            background-color: rebeccapurple;
+            color:lavenderblush;
+        }
+        header{
+            text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 50px; color: lavenderblush;
+        }
+        .tanggal{
+            text-align: right; margin-right: 30px;
+        }
+        .tanggal input{
+            background-color: thistle;
+            margin-left: 5px;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .kolom {
+            margin: 30px;
+            border-style: double;
+            border-radius: 10px;
+        }
+        .kolom input{
+            margin-left: 30px;
+            background-color: thistle;
+            border-radius: 5px;
+        }
+        .kolom textarea{
+            background-color:thistle;
+            border-radius: 5px;
+            border-style: double;
+        }
+    </style>
+</head>
+<body style="background-position:initial;">
+
+    <header>Student Registration Form</header>
+    <form action="action.php" method="POST">
+
+    <div class="tanggal">
+        <p>
+            <label style="margin-right: 40px;" for="tanggal">DATE</label>
+            <input type="date" name="date" id="tanggal" value="2008-12-20">
+        </p>
+    </div>
+
+    <fieldset class="kolom">
+        <legend>PERSONAL INFORMATION</legend>
+        <p>
+            <label style="margin-right: 109px;">NAME</label>
+            <input type="text">
+        </p>
+        <p>
+            <label  style="margin-right: 40px;">DATE OF BIRTH</label>
+            <input type="date" name="date_birth" id="date_birth" value="2008-12-20">
+        </p>
+    </fieldset>
+
+    <fieldset class="kolom">
+        <legend>CONTACT INFORMATION</legend>
+        <p>
+            <label  style="margin-right: 115px;">ADDRESS</label>
+            <textarea name="adress" id="adress" cols="30" rows="10"></textarea>
+        <p>
+            <label  style="margin-right: 120px;">CITY</label>
+            <input type="text" name="city" id="city">
+        </p>
+        <p>
+            <label  style="margin-right: 27px;">PROVINCE/STATE</label>
+            <input type="text" name="province" id="province">
+        </p>
+        <p>
+            <label  style="margin-right: 82px;">COUNTRY</label>
+            <input type="text" name="country" id="country">
+        </p>
+        <p>
+            <label  style="margin-right: 87px;">ZIP CODE</label>
+            <input type="text" name="zip_code" id="zip_code">
+        </p>
+        <p>
+            <label  style="margin-right: 106px;">PHONE</label>
+            <input type="number" name="phone" id="phone">
+        </p>
+        <p>
+            <label  style="margin-right: 108px;">EMAIL</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label  style="margin-right: 15px;">MEMBERSHIP TYPE</label>
+            <input type="radio" name="type" id="regular" value="R"> REGULAR
+            <input type="radio" name="type" id="premium" value="P"> PREMIUM
+            <input type="radio" name="type" id="vip" value="V"> V.I.P.
+        </p>
+    </fieldset>
+
+    <fieldset class="kolom">
+            <legend>COURSE INFORMATION</legend>
+            <P>
+                <label  style="margin-right: 46px;">COURSE NAME</label>
+                <input type="text" name="course" id="course">
+            </P>
+            <p>
+                <label  style="margin-right: 18px;">PAYMENT DETAILS</label>
+                <input type="radio" name="payment" id="cash" value="Cash"> CASH
+                <input type="radio" name="payment" id="cheque" value="Cheque"> CHEQUE
+                <input type="radio" name="payment" id="credit" value="Credit"> CREDIT CARD
+            </p>
+            <P>
+                <label  style="margin-right: 100px;">COMMENTS</label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </P>
+            <p>
+                <input type="submit" id="submit" value="SUBMIT">
+            </p>
+    </fieldset>
+        
+    </form>
+</body>
+</html>
